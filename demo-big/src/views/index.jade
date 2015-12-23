@@ -1,0 +1,19 @@
+---
+page_title: ""
+category: "index"
+body_class: ["index"]
+stylesheets: ["index"]
+ad_footer: false
+---
+
+extends _layout
+
+block content
+    +list-item(50,50,en)
+    +list-item(50,50,audio)
+    +list-item(50,50,hehe)
+
+
+block javascript
+    script(src='#{current.base}js/zepto-1.1.4.js')
+    script(src='#{current.base}js/index/index.js')

@@ -1,0 +1,152 @@
+// 全局通用样式
+// =====================================================
+
+/*// 导入主题皮肤样式设置
+@import "_setting"*/
+
+body{
+  background-color: body-bg-color;
+  background-image: body-img-url;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding-top: body-padding-top;
+  color: body-color;
+}
+.clearfix {
+  *zoom:1;
+}
+.clearfix:before {
+  display:table;
+  content:"";
+}
+.clearfix:after {
+  display:table;
+  content:"";
+  clear:both;
+}
+.gf-wrap{
+  width: 100%;
+  min-height: 100%;
+}
+.nav-menu{
+  width: 100%;
+  height: nav-height;
+  background-color: nav-bg-color;
+  position: fixed;
+  bottom: 0;
+  border-top: 2px solid nav-border-color;
+  z-index: 999;
+  a{
+    display: block;
+    width: 25%;
+    color: nav-a-color;
+    text-align: center;
+    border: 1px solid nav-border-color;
+    margin-left: -1px;
+    font-size: 24px;
+    line-height: 28px;
+    font-style:normal;
+    -webkit-text-stroke-width: 0px!important;
+    p{
+      font-size: 12px;
+      line-height: 14px;
+      -webkit-font-smoothing: antialiased;
+      -webkit-text-stroke-width: 0.2px;
+      -moz-osx-font-smoothing: grayscale;
+    }
+  }
+}
+.index{
+  .nav-menu{
+    .icon-home{
+      color: nav-aCurrent-color !important;
+    }
+  }
+}
+.list{
+  .nav-menu{
+    .icon-statistics{
+      color: nav-aCurrent-color !important;
+    }
+  }
+}
+.record{
+  .nav-menu{
+    .icon-record{
+      color: nav-aCurrent-color !important;
+    }
+  }
+}
+.rule{
+  .nav-menu{
+    .icon-rule{
+      color: nav-aCurrent-color !important;
+    }
+  }
+}
+.flex{
+  display: flex;
+  justify-content: center;
+  align-content: flex-end;
+  flex-flow: row;
+}
+.hide,.hidden {
+  display: none!important;
+}
+.show {
+  display: block!important;
+}
+.active{
+  background-color: #223338;
+}
+.text-overflow {
+  display:inline-block;
+  word-break:keep-all;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+.text-justify{
+  text-align:justify;
+  text-justify:inter-ideograph;
+}
+.btn{
+  display: inline-block;
+  padding 6px 12px
+  font-size 1.4rem
+  font-weight 400
+  text-align: center;
+  white-space: nowrap
+  vertical-align: middle
+  touch-action manipulation
+  border: 1px solid transparent
+  border-radius 4px
+  color: #ffffff;
+}
+.btn-commit
+  background-color btn-danger-bg
+  border 1px solid btn-danger-border
+
+.btn-reset
+  background-color btn-warning-bg
+  border 1px solid btn-warning-border
+
+.btn-default
+  background-color btn-primary-bg
+  border 1px solid btn-primary-border
+
+.btn-primary
+  background-color btn-primary-bg
+  border 1px solid btn-primary-border
+.btn-success
+  background-color btn-success-bg
+  border 1px solid btn-success-border
+.btn-info
+  background-color btn-info-bg
+  border 1px solid btn-info-border
+.btn-warning
+  background-color btn-warning-bg
+  border 1px solid btn-warning-border
+.btn-danger
+  background-color btn-danger-bg
+  border 1px solid btn-danger-border

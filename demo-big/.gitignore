@@ -1,0 +1,19 @@
+# git
+.git/
+
+# idea
+.idea/
+
+# styles
+
+**/css/*.scss
+
+# node_modules
+**/node_modules/
+
+# 生产环境dist
+
+
+# 测试文件
+test/
+record-jade-less-gulp/
