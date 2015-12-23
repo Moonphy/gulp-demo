@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,maximum-scale=1.0">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>播放语音</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/record.css">
+</head>
+<body class="record">
+<p class="tip icon-recording">录取声音中..</p>
+<div class="record-wrap">
+    <img src="../img/record-wrap.png" alt="" class="record-wrap-bg"/>
+    <p class="duration">还没生成录音作品</p>
+    <div class="audio-wrap icon-recording hidden">
+        <audio src="../assets/src/EricClapton-Layla.mp3" id="myaudio"></audio>
+    </div>
+
+</div>
+<a href="javascript:void(0);" id="btn-recording" class="icon-recording btn">按住录音</a>
+<p class="record-less-than">录音时长最多1分钟</p>
+<a href="javascript:void(0);" id="btn-commit" class="btn btn-commit hidden">提交录音</a>
+<a href="javascript:void(0);" id="btn-reset" class="btn btn-reset hidden">删除录音，重新录制</a>
+<nav class="nav-menu flex" id="nav-menu">
+    <a href="index.html" class="iconfont icon-home"><p>表白主页</p></a>
+    <a href="record.html" class="iconfont icon-record current"><p>我要表白</p></a>
+    <a href="list.html" class="iconfont icon-statistics"><p>排行榜</p></a>
+    <a href="rule.html" class="iconfont icon-rule"><p>活动规则</p></a>
+</nav>
+<script src="../assets/js/zepto-1.1.4.js"></script>
+<script src="../assets/js/record/record.js"></script>
+</body>
+</html>

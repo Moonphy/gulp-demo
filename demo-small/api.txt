@@ -1,0 +1,10 @@
+#gulp 工程构建
+
+1.初始化package.json
+$ npm init
+
+2.本地安装gulp
+$ npm install --save-dev gulp
+
+3.本地安装gulp插件
+$ npm install --save-dev gulp-ruby-sass gulp-autoprefixer gulp-minify-css gulp-jshint gulp-concat gulp-uglify gulp-imagemin gulp-notify gulp-rename gulp-livereload gulp-cache del
