@@ -21,5 +21,8 @@ require('./gulp/tasks/generate')(gulp, opts, config, $);
 require('./gulp/tasks/compile')(gulp, opts, $);
 require('./gulp/tasks/clean')(gulp, opts, config);
 require('./gulp/tasks/watch')(gulp, opts, config, $);
+require('./gulp/tasks/watch')(gulp, opts, config, $);
 require('./gulp/tasks/serve')(gulp, opts, config, $);
 require('./gulp/tasks/default')(gulp);
+
+//require('./gulp/tasks/browserify')(gulp, opts, config, $);

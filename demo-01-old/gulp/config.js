@@ -26,7 +26,7 @@ module.exports = {
   },
 
   assets: {
-    src: assets + "/**/*.+(css|js|png|jpg|gif|eot|svg|ttf|woff)",
+    src: assets + "/**/*.+(css|js|eot|svg|ttf|woff)",
     build: build,
     dist: dist
   },
@@ -53,12 +53,43 @@ module.exports = {
     dist: dist + '/demos'
   },
 
+  images: {
+    src: [
+      assets + "/images/**/*"
+    ],
+    build: build + '/images',
+    dist: dist + '/images'
+  },
+
+  sprite:{
+    src: [
+      assets + "/images/sprites/**/*"
+    ],
+    build: assets + "/images"
+  },
+
   collection: {
     src: [
       src + "/index.jade"
     ],
     build: build,
     dist: dist
+  },
+
+  browserify: {
+    extensions: [
+      ".coffee"
+    ],
+    files: "./browserify.json"
+  },
+
+  test: {
+    unit: [
+      test + '/unit/**/*.coffee'
+    ],
+    e2e: [
+      test + '/e2e/**/*.coffee'
+    ]
   }
 
 };
