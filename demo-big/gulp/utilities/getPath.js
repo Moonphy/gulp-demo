@@ -11,4 +11,4 @@ module.exports = function (file) {
       fileName = path.basename(file.path, path.extname(file.path)),
       filePath = fileDir ? fileDir + "/" + fileName : fileName;
   return filePath;
-}
+};
