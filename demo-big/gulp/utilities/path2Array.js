@@ -5,5 +5,5 @@
 var path = require('path');
 
 module.exports = function (path) {
-  return path.split("/");
+  return path.split('/');
 };

@@ -6,9 +6,7 @@ var browserSync = require("browser-sync"),
     handleErrors = require('../utilities/handleErrors');
 
 module.exports = function (gulp, opts, config, $) {
-
   var getData = require("../utilities/getData")(opts);
-
   gulp.task('markup', function() {
 
     if(opts.p) {
@@ -18,7 +16,7 @@ module.exports = function (gulp, opts, config, $) {
         .pipe($.ignore.exclude(config.markup.excluded))
         .pipe($.data(getData))
         .pipe($.jade({
-          pretty: '    '
+          pretty: true
         }))
         .on("error", handleErrors)
         .pipe(gulp.dest(config.markup.dist));
@@ -29,11 +27,13 @@ module.exports = function (gulp, opts, config, $) {
       .pipe($.progeny())
       .pipe($.ignore.exclude(config.markup.excluded))
       .pipe($.data(getData))
-      .pipe($.jade())
+      .pipe($.jade({
+            pretty: true
+        }))
       .on("error", handleErrors)
       .pipe(gulp.dest(config.markup.build))
       .pipe($.filter("**/*.html"))
-      .pipe(browserSync.reload({stream: true, once:true}));
+      .pipe(browserSync.reload({stream: true}));
 
   });
 };

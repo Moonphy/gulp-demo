@@ -12,7 +12,7 @@ module.exports = function (gulp, opts, config, $) {
     return gulp.src(config.markup.src)
     .pipe($.ignore.exclude(config.markup.excluded))
     .pipe($.data(function (file) {
-      var content = fm(String(file.contents));
+      var content = fm(String(file.contents)),
           page = {};
 
       file.contents = new Buffer(content.body);

@@ -6,6 +6,7 @@
 var src = "./src",
     dist = "./dist",
     build = "./public",
+    test = "./tests",
     assets = src + "/assets";
 
 module.exports = {
@@ -13,6 +14,7 @@ module.exports = {
     src: src,
     dist: dist,
     build: build,
+    test: test,
     assets: assets
   },
 
@@ -26,7 +28,7 @@ module.exports = {
   },
 
   assets: {
-    src: assets + "/**/*.+(css|js|eot|svg|ttf|woff|mp3)",
+    src: assets + "/**/*.+(css|js|eot|svg|ttf|woff)",
     build: build,
     dist: dist
   },
@@ -44,22 +46,28 @@ module.exports = {
 
   markup: {
     src: [
-      src + "/views/**/*.jade"
+      src + "/demos/**/*.jade"
     ],
     excluded: [
       "**/_*.jade"
     ],
-    build: build + '/views',
-    dist: dist + '/views'
+    build: build + '/demos',
+    dist: dist + '/demos'
   },
 
   images: {
     src: [
-      assets + "/img/**/*"
+      assets + "/images/**/*"
     ],
-    build: build + '/img',
-    dist: dist + '/img'
+    build: build + '/images',
+    dist: dist + '/images'
   },
+    sprite:{
+        src: [
+            assets + "/images/sprites/**/*"
+        ],
+        build: assets + "/images"
+    },
 
   collection: {
     src: [
@@ -67,6 +75,21 @@ module.exports = {
     ],
     build: build,
     dist: dist
-  }
+  },
 
+  browserify: {
+    extensions: [
+      ".coffee"
+    ],
+    files: "./browserify.json"
+  },
+
+  test: {
+    unit: [
+      test + '/unit/**/*.coffee'
+    ],
+    e2e: [
+      test + '/e2e/**/*.coffee'
+    ]
+  }
 };
