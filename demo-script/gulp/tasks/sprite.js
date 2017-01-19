@@ -11,7 +11,7 @@ module.exports = function (gulp, opts, config, $) {
         var spriteData = gulp.src(config.sprite.src)
             .on("error", handleErrors)
             .pipe(spritesmith({
-                imgName: 'sprite.png',
+                imgName: '../img/sprite.png',
                 cssName: '_sprite.styl',
                 cssFormat: 'stylus',
                 algorithm: 'binary-tree',
