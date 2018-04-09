@@ -1,0 +1,32 @@
+[
+  {
+    "input": "./src/assets/js/hello.js",
+    "output": "test1.js",
+    "public": "./public/js",
+    "dist": "./dist/js"
+  },
+  {
+    "input": "./src/assets/js/common.js",
+    "output": "app.js",
+    "public": "./public/js",
+    "dist": "./dist/js"
+  },
+  {
+    "input": "./src/assets/js/sliderMobile.js",
+    "output": "sliderMobile.js",
+    "public": "./public/js",
+    "dist": "./dist/js"
+  },
+  {
+    "input": "./src/assets/js/es6Test.js",
+    "output": "es6Test.js",
+    "public": "./public/js",
+    "dist": "./dist/js"
+  },
+  {
+    "input": "./src/assets/js/zepto.min.js",
+    "output": "zepto.min.js",
+    "public": "./public/js",
+    "dist": "./dist/js"
+  }
+]
